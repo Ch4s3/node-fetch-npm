@@ -93,6 +93,7 @@ function fetch (uri, opts) {
           request.method = 'GET'
           request.body = null
           request.headers.delete('content-length')
+          request.headers.delete('authorization')
         }
 
         request.counter++
